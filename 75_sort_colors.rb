@@ -31,9 +31,35 @@ def sort_colors(nums)
   nums.inspect
 end
 
+# 使用三路快排思路
+def sort_colors_2(nums)
+  # 记录元素0和1之间的分界
+  # arr[0 .. zero] == 0
+  zero = -1
+  # 记录元素1和2之间的分界
+  # arr[two .. n-1] == 2
+  two = nums.size 
+  i = 0
+  while(i < two)
+    if nums[i] == 1
+      i += 1
+    elsif nums[i] == 2
+      two -= 1
+      nums[i], nums[two] = nums[two], nums[i]
+    else
+      raise 'nums must only include 0, 1, 2' if not nums[i].zero?
+      zero += 1
+      nums[zero], nums[i] = nums[i], nums[zero]
+      i += 1
+    end
+  end
+  nums.inspect
+end
+
+
 def test
    nums = [2,0,2,1,1,0]
-   puts sort_colors nums
+   puts sort_colors_2 nums
 end
 
 test
