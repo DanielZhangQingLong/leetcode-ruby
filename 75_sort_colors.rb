@@ -3,6 +3,9 @@
 # @return {Void} Do not return anything, modify nums in-place instead.
 # Input: [2,0,2,1,1,0]
 # Output: [0,0,1,1,2,2]
+# 复杂度分析
+# T(n) = O(n)
+# S(n) = O(1)
 def sort_colors(nums)
   count = Array.new(3, 0)
   for i in (0 ... nums.size)

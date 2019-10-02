@@ -1,6 +1,9 @@
 # Problem Link: https://leetcode.com/problems/product-of-array-except-self/
 # 238. Product of Array Except Self
 # 第1次实现
+# 复杂度分析
+# T(n) = O(n)
+# S(n) = O(1)
 def move_zeroes(nums)
   j = 0;
   nums.each_with_index do |num, i|
@@ -16,6 +19,9 @@ def move_zeroes(nums)
 end
 
 # 第2次实现
+# 复杂度分析
+# T(n) = O(n)
+# S(n) = O(1)
 def move_zeroes2(nums)
   j = 0
   for i in (0 ... nums.size)
@@ -30,14 +36,6 @@ def move_zeroes2(nums)
     end
   end
 end
-  #if !(nums[i] == 0 && nums[j] == 0)
-  #  if nums[i] != 0 && nums[j] == 0
-  #    temp = nums[i]
-  #    nums[i] = nums[j]
-  #    nums[j] = temp
-  #  end
-  #  j += 1
-  #end
 
 def test
   nums = [4,2,4,0,0,3,0,5,1,0] #[0,1,0,3,12]
