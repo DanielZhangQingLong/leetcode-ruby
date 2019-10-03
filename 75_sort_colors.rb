@@ -31,12 +31,12 @@ def sort_colors(nums)
   nums.inspect
 end
 
-# 使用三路快排思路
+# three-way-partition
 def sort_colors_2(nums)
-  # 记录元素0和1之间的分界
+  # store the index of element 0 
   # arr[0 .. zero] == 0
   zero = -1
-  # 记录元素1和2之间的分界
+  # store the index of element 2 
   # arr[two .. n-1] == 2
   two = nums.size 
   i = 0
