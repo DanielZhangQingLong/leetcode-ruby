@@ -1,5 +1,7 @@
 # @param {String} s
 # @return {Boolean}
+# Tn = O(n)
+# Sn = O(1)
 def is_palindrome(s)
   s = s.downcase.gsub(/[^a-z0-9]/i, '')
   return true if s.size == 0
