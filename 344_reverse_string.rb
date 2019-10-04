@@ -1,5 +1,7 @@
 # @param {Character[]} s
 # @return {Void} Do not return anything, modify s in-place instead.
+# Tn = On
+# Sn = O1
 def reverse_string(s)
   return true if s.size == 0
   l = 0
