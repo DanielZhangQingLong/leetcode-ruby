@@ -1,6 +1,8 @@
 # @param {Integer[]} nums1
 # @param {Integer[]} nums2
 # @return {Integer[]}
+# Tn = On
+# Sn = On
 require 'set'
 def intersection(nums1, nums2)
   set1 = Set.new(nums1)

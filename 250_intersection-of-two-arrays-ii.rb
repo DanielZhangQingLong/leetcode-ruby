@@ -1,6 +1,8 @@
 # @param {Integer[]} nums1
 # @param {Integer[]} nums2
 # @return {Integer[]}
+# Tn = On
+# Sn = On
 def intersect(nums1, nums2)
   map1 = {}
   nums1.each do |n|
