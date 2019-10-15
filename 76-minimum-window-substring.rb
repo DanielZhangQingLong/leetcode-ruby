@@ -1,6 +1,8 @@
 # @param {String} s
 # @param {String} t
 # @return {String}
+# Tn : On
+# Sn : O1
 def min_window(s, t)
   return "" if s.size < t.size
   t_hash = {}
