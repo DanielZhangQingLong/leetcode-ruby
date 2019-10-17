@@ -1,7 +1,7 @@
 # @param {Integer[]} nums1
 # @param {Integer[]} nums2
 # @return {Integer[]}
-# Tn = On
+# Tn = Onlogn
 # Sn = On
 def intersect(nums1, nums2)
   map1 = {}
@@ -31,7 +31,9 @@ end
 def intersect2(nums1, nums2)
   map1 = Hash.new(0)
   ret = []
+  #O(nlogn)
   nums1.each {|n| map1[n] += 1}
+  #O(nlogn)
   nums2.each do|n|
     if map1[n] > 0
       ret << n
