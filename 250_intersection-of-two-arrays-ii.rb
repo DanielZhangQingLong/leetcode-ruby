@@ -23,4 +23,22 @@ def intersect(nums1, nums2)
   ret
 end
 
+# @param {Integer[]} nums1
+# @param {Integer[]} nums2
+# @return {Integer[]}
+# Tn = On
+# Sn = On
+def intersect2(nums1, nums2)
+  map1 = Hash.new(0)
+  ret = []
+  nums1.each {|n| map1[n] += 1}
+  nums2.each do|n|
+    if map1[n] > 0
+      ret << n
+      map1[n] -= 1
+    end
+  end
+  ret
+end
+
 puts intersect( [4,9,5], [9,4,9,8,4])
