@@ -13,4 +13,4 @@ def is_anagram(s, t)
   s_hash == t_hash
 end
 
-puts is_anagram("anagram", "nagaram")
+puts is_anagram("a•nagram", "nag•aram")
